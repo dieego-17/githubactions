@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        - name: hola echo
+      - name: hola echo
         run: echo "primer workflow"
