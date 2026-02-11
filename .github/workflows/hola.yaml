@@ -10,6 +10,11 @@ jobs:
       - name: hola echo
         run: echo "primer workflow"
 
+      - name: clonar
+        uses: actions//checkout@v6
+
       - name: dar permisos y ejecutamos
         run: |
-            ls ../
+            chmod +x hola.sh
+            ./hola.sh
+
