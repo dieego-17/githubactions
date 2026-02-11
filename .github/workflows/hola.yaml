@@ -1,0 +1,12 @@
+name: hola primer workflow
+
+on:
+   push:
+
+
+jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: hola echo
+        run: echo "primer workflow"
