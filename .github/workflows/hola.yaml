@@ -12,4 +12,4 @@ jobs:
 
       - name: dar permisos y ejecutamos
         run: |
-            ls
+            ls ../
