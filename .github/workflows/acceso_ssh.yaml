@@ -8,9 +8,9 @@ jobs:
         runs-on:  ubuntu-latest
         steps:
             - name: clonar repo
-              uses: actions/checktout@v6
+              uses: actions/checkout@v6
 
-            - name:
+            - name: conexion ssh
               run: |
                   ssh ${{ secrets.USER_NAME_MV }}@${{ secrets.USER_IP_MV }}
                   pwd
