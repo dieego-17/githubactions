@@ -1,0 +1,16 @@
+name: acceso mv ssh
+
+on:
+  push:
+
+jobs:
+    prueba-ssh-workflow:
+        runs-on:  ubuntu-latest
+        steps:
+            - name: clonar repo
+              uses: actions/checktout@v6
+
+            - name:
+              run: |
+                  {{SECRETS.USER_NAME_MV}}@{{SECRETS.USER_IP_MV}}
+                  pwd
