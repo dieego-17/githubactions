@@ -1,12 +1,11 @@
 name: hola primer workflow
 
 on:
-   push:
-
+  push:
 
 jobs:
-    primer-workflow:
-        runs-on: ubuntu-latest
-        steps:
-           - name: hola echo
-           run: echo "primer workflow"
+  primer-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hola echo
+        run: echo "primer workflow"
