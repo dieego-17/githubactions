@@ -11,6 +11,10 @@ jobs:
               uses: actions/checkout@v6
 
             - name: conexion ssh
-              run: |
-                  ssh ${{ secrets.USER_NAME_MV }}@${{ secrets.USER_IP_MV }}
-                  pwd
+              uses: appleboy/ssh-action@v1
+              with:
+                host: ${{ secrets.USER_IP_MV }}
+                username: ${{ secrets.USER_NAME_MV }}
+                password: ${{ secrets.USER_PASS_MV }}
+                port: 22
+                script: whoami
