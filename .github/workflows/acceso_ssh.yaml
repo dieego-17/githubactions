@@ -12,5 +12,5 @@ jobs:
 
             - name:
               run: |
-                  {{SECRETS.USER_NAME_MV}}@{{SECRETS.USER_IP_MV}}
+                  ssh ${{ secrets.USER_NAME_MV }}@${{ secrets.USER_IP_MV }}
                   pwd
