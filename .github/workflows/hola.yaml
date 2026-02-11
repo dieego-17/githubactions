@@ -12,6 +12,5 @@ jobs:
 
       - name: dar permisos y ejecutamos
         run: |
-            cd ../../
-            chmod +x hola.sh
+            chmod +x githubactions/hola.sh
             ./hola.sh
