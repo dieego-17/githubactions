@@ -5,8 +5,8 @@ on:
 
 
 jobs:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: hola echo
-        run: echo "primer workflow"
+    primer-workflow:
+        runs-on: ubuntu-latest
+        steps:
+           - name: hola echo
+           run: echo "primer workflow"
